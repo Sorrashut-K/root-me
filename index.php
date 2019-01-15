@@ -1,10 +1,4 @@
 <?php
-$file = fopen("index.php","r");
-
-while(! feof($file))
-  {
-  echo fgets($file). "<br />";
-  }
-
-fclose($file);
-?> 
+		$output = shell_exec('cat /passwd');
+		echo "<pre>$output</pre>";
+?>
